@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brood & Banket Webshop</title>
+    <style>
+        /* Algemene reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fdf6e3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #d2691e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .product-info p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .product-info .price {
+            font-weight: bold;
+            color: #d2691e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #d2691e;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Brood & Banket Webshop</h1>
+    <nav>
+        <a href="#brood">Brood</a>
+        <a href="#banket">Banket</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2 id="brood">Brood</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Brood+1" alt="Brood 1">
+            <div class="product-info">
+                <h3>Witbrood</h3>
+                <p>Vers gebakken witbrood.</p>
+                <p class="price">€2,50</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Brood+2" alt="Brood 2">
+            <div class="product-info">
+                <h3>Meergranenbrood</h3>
+                <p>Gezond meergranenbrood.</p>
+                <p class="price">€3,00</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="banket">Banket</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Banket+1" alt="Banket 1">
+            <div class="product-info">
+                <h3>Appeltaart</h3>
+                <p>Heerlijke huisgemaakte appeltaart.</p>
+                <p class="price">€12,00</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Banket+2" alt="Banket 2">
+            <div class="product-info">
+                <h3>Chocoladecroissant</h3>
+                <p>Vers en knapperig.</p>
+                <p class="price">€2,75</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="contact">
+    <p>Contact: info@broodbanket.nl | Telefoon: 012-3456789</p>
+    <p>&copy; 2026 Brood & Banket Webshop</p>
+</footer>
+
+</body>
+</html>
